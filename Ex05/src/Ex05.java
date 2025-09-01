@@ -14,22 +14,17 @@ public class Ex05 {
                     n1 = Ler.nextFloat();
                     if (n1 < 0) System.out.println("Entrada inválida, digite novamente a PRIMEIRA nota do aluno!");
                     } while (n1 < 0);
-                    n1 = n1*2;
-
                     do { System.out.print("Digite a SEGUNDA nota do aluno:");
                     n2 = Ler.nextFloat();
                     if (n2 < 0) System.out.println("Entrada inválida, digite novamente a SEGUNDA nota do aluno!");
                     } while (n2 < 0);
-                    n2= n2*3;
-
                     do { System.out.print("Digite a TERCEIRA nota do aluno:");
                     n3 = Ler.nextFloat();
                     if (n3 < 0) System.out.println("Entrada inválida, digite novamente a TERCEIRA nota do aluno!");
                     } while (n3 < 0);
-                    n3 = n3*5;
                     
                     //Calculo
-                    media = (n1 + n2 + n3)/10;
+                    media = (n1*2 + n2*3 + n3*5)/10;
                     if (media < 6) {
                         System.out.println("O Aluno está REPROVADO!");
                     } else {
